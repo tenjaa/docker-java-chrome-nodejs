@@ -5,7 +5,8 @@ RUN apt-get install -y --no-install-recommends \
 	wget \
 	gnupg \
 	curl \
-	ca-certificates
+	ca-certificates \
+	bzip2
 
 #Install Google Chrome
 #https://www.google.com/linuxrepositories/
