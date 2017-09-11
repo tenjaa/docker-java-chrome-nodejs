@@ -8,7 +8,8 @@ RUN apt-get install -y --no-install-recommends \
 	ca-certificates \
 	bzip2 \
 	git \
-	lsof
+	lsof \
+	libncurses5
 
 #Install Google Chrome
 #https://www.google.com/linuxrepositories/
