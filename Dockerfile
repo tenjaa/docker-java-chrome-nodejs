@@ -1,4 +1,4 @@
-FROM debian
+FROM ubuntu
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \ 
@@ -19,9 +19,9 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends google-chrome-stable
 
 #Install Openjdk 8
-RUN sh -c 'echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list.d/backports.list'
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends -t jessie-backports openjdk-8-jdk-headless
+#RUN sh -c 'echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list.d/backports.list'
+#RUN apt-get update
+RUN apt-get install -y --no-install-recommends openjdk-8-jdk-headless
 
 #Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
