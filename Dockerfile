@@ -1,7 +1,7 @@
 FROM node:alpine
 
 RUN apk update
-RUN apk install \
+RUN apk add \
   openjdk8 \
   chromium
 
